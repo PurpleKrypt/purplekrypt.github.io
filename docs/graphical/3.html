@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title> PurpleKrypt  |  Documentation - Encrypting Text with PurpleKrypt | Windows | Linux | macOS </title>
+			<link data-default-icon="../../imgs/favicon.png" rel="icon" sizes="192x192" href="../../imgs/PurpleKrypt_Icon_192x192.png" />
+			<meta name="viewport" content="width=device-width, initial-scale=0.8, shrink-to-fit=yes">
+			<meta charset="utf-8">
+		</head>
+		
+		<link rel="stylesheet" href="../../styles/fonts.css"/>
+		<link rel="stylesheet" href="../../styles/universal.css"/>
+		<link rel="stylesheet" href="../../styles/docs.css"/>
+		
+		<style type="text/css">
+		
+		</style>
+		
+		<body>
+		<!-- Navigation Bar Start-->
+			<div id="nav_bar">			
+				<a href="../../index.html"><div  id="nav_logo"><img style="height:100%;" src="../../imgs/PurpleKrypt_Logo_Name_36p.png"/></div></a>				
+				<div id="nav_buttons_box_desktop">
+					<a href="../../about.html"><p class="nav_buttons"> About </p></a>								
+					<a href="../../docs.html"><p class="nav_buttons"> Documentation </p></a>
+					<a href="https://github.com/PurpleKrypt"><p class="nav_buttons">Github</p></a>	
+					<a href="../../credits.html"><p class="nav_buttons"> Credits </p></a>
+				</div>						
+				<a href="../../download.html" ><div id="nav_download_button_box"><p id="nav_download_button"> Download </p></div></a>	
+				<div id="nav_dropdown_button">
+				<svg id="nav_dropdown_more_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="40" height="40">
+					<rect x="5" y="5" width="20" height="2" fill="#E6E6E6"/><rect x="5" y="11" width="20" height="2" fill="#E6E6E6"/><rect x="5" y="17" width="20" height="2" fill="#E6E6E6"/>
+				</svg>	
+				<svg id="nav_dropdown_close_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+					<rect x="1" y="10" width="16" height="2" fill="#ffffff" transform="rotate(45 12 12)"/><rect x="8" y="3" width="2" height="16" fill="#ffffff" transform="rotate(45 12 12)"/>
+				</svg>		
+				</div>			
+			</div>
+			<div id="nav_dropdown_content">
+				<a href="../../about.html">About</a>
+				<a href="../../docs.html">Documentation</a>
+				<a href="https://github.com/PurpleKrypt">Github</a>
+				<a href="../../credits.html">Credits</a>
+				<a href="../../download.html">Download</a>
+			</div>	
+			<script type="text/javascript">
+				// nav dropdown toggle script
+					const dropdownButton = document.getElementById('nav_dropdown_button');
+					const dropdownContent = document.getElementById('nav_dropdown_content');
+					const dropdownClose = document.getElementById('nav_dropdown_close_icon');
+					const dropdownMore = document.getElementById('nav_dropdown_more_icon');
+					dropdownButton.addEventListener('click', function() {
+					  if (dropdownContent.style.display === 'block') {
+						dropdownContent.style.display = 'none'; 
+						dropdownClose.style.display = 'none'; 
+						dropdownMore.style.display = 'block'; 
+					  } else {
+						dropdownContent.style.display = 'block';
+						dropdownClose.style.display = 'block'; 
+						dropdownMore.style.display = 'none'; 
+					  }
+					});
+			</script>
+			<!-- Navigation Bar End-->
+				
+			<main>
+				<div class="restricted_width_box">
+					<div class="doc_path_box">
+					
+						<doc_path_text>
+							<a href="../../docs.html" class="pl">Documentation</a> / 
+							<a href="graphical.html" class="pl">Graphical</a> /
+							<a href="" class="pl"> Encrypting & Decrypting Text</a>
+						</doc_path_text>  
+						
+						<div class="doc_check_box">
+							<label for="darkModeToggle">Dark Mode:</label>
+							<input type="checkbox" id="darkModeToggle">
+						</div>
+					</div>
+
+					<div id="doc_page">
+					  <doc_h1> 3. Encrypting & Decrypting Text </doc_h1>
+
+					  <doc_author>by: saaiqSAS</doc_author>
+					  <doc_date>Last Updated: 9/2/2026</doc_date>					
+					  
+					  <doc_para>
+						In this section, we will guide you through the process of encrypting text using PurpleKrypt.
+						You can either generate a new key or choose an existing one to secure your data.
+					  </doc_para>
+					  
+					  <doc_h2>Setup Key</doc_h2>
+
+					  <doc_para>
+						For simplicity, we'll use a password-only setup to process our data, as shown in (<dh>Fig.3.1</dh>). Once you have configured your key usage, click the 
+						<dh>Confirm</dh> button. You will then be taken to the <dh>Data</dh> tab. Note that the details of the key usage confirmation will appear in the
+						<dh>Summary</dh> box of the <dh>Setup</dh> tab. Since we are working with text, make sure to select <dh>Text</dh> in the <dh>Data Type</dh> box.
+					  </doc_para>
+					  
+					  <img class="doc_image" src="imgs/3_1.png"/>
+					  <doc_fig>Fig.3.1</doc_fig>
+					  
+					  <doc_h2>Encrypting Text</doc_h2>
+
+					  <doc_para>
+						Once you are in the <dh>Data</dh> tab, enter the text you wish to encrypt in the <dh>Input</dh> section, then click the <dh>Process</dh> button to begin encryption.
+						When the process completes, the encrypted text will appear in the <dh>Output</dh> section (<dh>Fig3.3</dh>). Ensure that the <dh>Encrypt</dh>
+						option is selected in the <dh>Setup</dh> tab. You can also verify this directly from the <dh>Data</dh> tab using the icons at the top left:
+						the <dh>Enc</dh> icon indicates <dh>Encrypt</dh>, while the <dh>Dec</dh> icon indicates <dh>Decrypt</dh>.
+					  </doc_para>
+
+					  <img class="doc_image" src="imgs/3_3.png"/>
+					  <doc_fig>Fig.3.3</doc_fig>	
+					  
+					  <doc_h2>Decrypting Text</doc_h2>
+
+					  <doc_para>
+						To decrypt text, use the same key configuration that was used to encrypt the data. If you generated a keyfile, select that keyfile and provide the password
+						if the keyfile is encrypted. For this tutorial, we'll simply go to the <dh>Setup</dh> tab and change the function type to <dh>Decrypt</dh>, as shown in 
+						(<dh>Fig.3.5</dh>).
+					  </doc_para>
+
+					  <img class="doc_image" src="imgs/3_5.png"/>
+					  <doc_fig>Fig.3.5</doc_fig>
+					  
+					  <doc_para>
+						After that, return to the <dh>Data</dh> tab, paste the encrypted text into the <dh>Input</dh> section, and click the <dh>Process</dh> button.
+						Once the decryption is complete, the decrypted text will be displayed in the <dh>Output</dh> section (<dh>Fig.3.7</dh>).
+					  </doc_para>
+
+					  <img class="doc_image" src="imgs/3_7.png"/>
+					  <doc_fig>Fig.3.7</doc_fig>
+					</div>
+
+					
+					<div class="doc_navigate_box">
+							<a href="2.html" ><p class="white_button"> Previous: Generating Keys </p></a>
+							<a href="4.html" ><p class="blue_button"> Next: Enc & Dec Files </p></a>
+					</div>	
+				</div>	
+					
+			</main>
+			
+			<footer>
+				<div id="footer_serp"></div>
+				<p style="font-size:20px; margin-top:50px"><bg>Made with passion by </bg><a href="https://saaiqsas.github.io" class="footer_saaiqSAS"> saaiqSAS</a><bg> and Contributors</bg></p>
+				<br/>
+				<ft id="copyrights">Copyrights (©) 2024 Saaiq Abdulla Saeed</ft>
+				<ft>This website and its contents are generally licensed under the <a href="../../LICENSE.md">MIT License</a>, unless stated otherwise.</ft>
+				<div class="grid3_box" id="footer_grid">
+					<div>
+						<fh>Project Info</fh>
+						<ft><a href="../../about.html">About Project</a></ft>
+						<ft><a href="../../credits.html">Credits & Contributers</a></ft>
+						<ft><a href="../../docs.html">Documentation</a></ft>
+					</div>
+					<div>
+						<fh>Get Involved</fh>
+						<ft><a href="../../download.html">Download</a></ft>
+						<ft><a href="../../contribute.html">Contribute</a></ft>
+						<ft><a href="https://github.com/PurpleKrypt">Github</a></ft>
+					</div>
+					<div>
+						<fh>Legal & Support</fh>
+						<ft><a href="../../legal/privacy_policy.html">Privacy Policy</a></ft>
+						<ft><a href="../../legal/terms.html"> Terms and Conditions</a></ft>
+						<ft><a href="../../contact.html"> Contact & Report</a></ft>
+					</div>	
+				</div>
+				<script type="text/javascript">
+					// Copyrights
+					var currentYear = new Date().getFullYear();
+					document.getElementById('copyrights').textContent = "Copyrights (©) "+currentYear + " Saaiq Abdulla Saeed";
+				</script>
+			</footer>
+		
+		</body>
+		
+		<script src="../doc_dark_mode.js"></script>
+	</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title> PurpleKrypt  |  Documentation - Encrypting Files with PurpleKrypt| Windows | Linux</title>
+			<link data-default-icon="../../imgs/favicon.png" rel="icon" sizes="192x192" href="../../imgs/PurpleKrypt_Icon_192x192.png" />
+			<meta name="viewport" content="width=device-width, initial-scale=0.8, shrink-to-fit=yes">
+			<meta charset="utf-8">
+		</head>
+		
+		<link rel="stylesheet" href="../../styles/fonts.css"/>
+		<link rel="stylesheet" href="../../styles/universal.css"/>
+		<link rel="stylesheet" href="../../styles/docs.css"/>
+		
+		<style type="text/css">
+		
+		</style>
+		
+		<body>
+		<!-- Navigation Bar Start-->
+			<div id="nav_bar">			
+				<a href="../../index.html"><div  id="nav_logo"><img style="height:100%;" src="../../imgs/PurpleKrypt_Logo_Name_36p.png"/></div></a>				
+				<div id="nav_buttons_box_desktop">
+					<a href="../../about.html"><p class="nav_buttons"> About </p></a>								
+					<a href="../../docs.html"><p class="nav_buttons"> Documentation </p></a>
+					<a href="https://github.com/PurpleKrypt"><p class="nav_buttons">Github</p></a>	
+					<a href="../../credits.html"><p class="nav_buttons"> Credits </p></a>
+				</div>						
+				<a href="../../download.html" ><div id="nav_download_button_box"><p id="nav_download_button"> Download </p></div></a>	
+				<div id="nav_dropdown_button">
+				<svg id="nav_dropdown_more_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="40" height="40">
+					<rect x="5" y="5" width="20" height="2" fill="#E6E6E6"/><rect x="5" y="11" width="20" height="2" fill="#E6E6E6"/><rect x="5" y="17" width="20" height="2" fill="#E6E6E6"/>
+				</svg>	
+				<svg id="nav_dropdown_close_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+					<rect x="1" y="10" width="16" height="2" fill="#ffffff" transform="rotate(45 12 12)"/><rect x="8" y="3" width="2" height="16" fill="#ffffff" transform="rotate(45 12 12)"/>
+				</svg>		
+				</div>			
+			</div>
+			<div id="nav_dropdown_content">
+				<a href="../../about.html">About</a>
+				<a href="../../docs.html">Documentation</a>
+				<a href="https://github.com/PurpleKrypt">Github</a>
+				<a href="../../credits.html">Credits</a>
+				<a href="../../download.html">Download</a>
+			</div>	
+			<script type="text/javascript">
+				// nav dropdown toggle script
+					const dropdownButton = document.getElementById('nav_dropdown_button');
+					const dropdownContent = document.getElementById('nav_dropdown_content');
+					const dropdownClose = document.getElementById('nav_dropdown_close_icon');
+					const dropdownMore = document.getElementById('nav_dropdown_more_icon');
+					dropdownButton.addEventListener('click', function() {
+					  if (dropdownContent.style.display === 'block') {
+						dropdownContent.style.display = 'none'; 
+						dropdownClose.style.display = 'none'; 
+						dropdownMore.style.display = 'block'; 
+					  } else {
+						dropdownContent.style.display = 'block';
+						dropdownClose.style.display = 'block'; 
+						dropdownMore.style.display = 'none'; 
+					  }
+					});
+			</script>
+			<!-- Navigation Bar End-->
+				
+			<main>
+				<div class="restricted_width_box">
+					<div class="doc_path_box">
+					
+						<doc_path_text>
+							<a href="../../docs.html" class="pl">Documentation</a> / 
+							<a href="graphical.html" class="pl">Graphical</a> /
+							<a href="" class="pl">Encrypting & Decrypting Files</a>
+						</doc_path_text>  
+						
+						<div class="doc_check_box">
+							<label for="darkModeToggle">Dark Mode:</label>
+							<input type="checkbox" id="darkModeToggle">
+						</div>
+					</div>
+
+					<div id="doc_page">
+					  <doc_h1> 4. Encrypting & Decrypting Files </doc_h1>
+
+					  <doc_author>by: saaiqSAS</doc_author>
+					  <doc_date>Last Updated: 9/2/2026</doc_date>
+
+					  <doc_para>
+						In this section, we'll walk you through the steps to encrypt your files using PurpleKrypt. You can either create a new encryption key or select an existing one to keep your data safe and secure.
+					  </doc_para>
+
+					  <doc_h2>Setup Key</doc_h2>
+
+					  <doc_para>
+						For simplicity, we'll use a password-only setup to process our data, as shown in (<dh>Fig.3.1</dh>). Once you have configured your key usage, click the <dh>Confirm</dh> button. You will then be taken to the <dh>Data</dh> tab. Note that the details of the key usage confirmation will appear in the <dh>Summary</dh> box of the <dh>Setup</dh> tab. Make sure to select <dh>File</dh> in the <dh>Data Type</dh> box.
+					  </doc_para>
+
+					  <img class="doc_image" src="imgs/5_1.png"/>
+					  <doc_fig>Fig.5.1</doc_fig>
+
+					  <doc_h2>Encrypting Files</doc_h2>
+
+					  <doc_para>
+						Once you are in the <dh>Data</dh> tab, you can easily drag and drop the files or folders you wish to encrypt onto the table in the <dh>Input</dh> section. Alternatively, you can use the <dh>Add File</dh> button to add individual files, or the <dh>Add Dir</dh> button to add directories or folders.
+					  </doc_para>
+
+					  <doc_para>
+						In this tutorial, we'll encrypt the files shown in (<dh>Fig.5.2</dh>). These files are then dropped onto the table, as shown in (<dh>Fig.5.3</dh>). You can select one of the following three output methods:
+					  </doc_para>
+
+					  <doc_point>
+						<b>1. </b><dh>Copy</dh> keeps the input files untouched, while the processed (encrypted or decrypted) files are saved to the specified destination directory.
+					  </doc_point>
+
+					  <doc_point>
+						<b>2. </b><dh>Move</dh> saves the processed files to the destination directory and then securely deletes the input files if no errors are encountered during processing. The secure delete method used in PurpleKrypt overwrites the file multiple times with different binary patterns before deleting it.
+					  </doc_point>
+
+					  <doc_point>
+						<b>3. </b><dh>Replace</dh> saves the processed file to its corresponding input file location, and if no errors are encountered, the original input files are securely deleted.
+					  </doc_point>
+
+					  <img class="doc_image" src="imgs/5_2.png"/>
+					  <doc_fig>Fig.5.2</doc_fig>
+
+					  <img class="doc_image" src="imgs/5_3.png"/>
+					  <doc_fig>Fig.5.3</doc_fig>
+
+					  <doc_para>
+						Under <dh>Process Settings</dh> (<dh>Fig5.4</dh>), you can choose the number of files to process in parallel, whether to assign random filenames to encrypted files, and whether to use the PK AAD ID. The PK AAD ID is an array of numbers that is randomly generated the first time you open a copy of PurpleKrypt and is stored in the <dh>pk_aad_id</dh> file.
+					  </doc_para>
+
+					  <doc_para>
+						Enabling the PK AAD ID option includes this data during encryption (used as AAD for AES-256) and prevents decryption using another copy of PurpleKrypt that has a different <dh>pk_aad_id</dh> file, even if the correct keyfile or password is provided. Use this option with caution, and it is highly recommended to back up your PurpleKrypt copy or the <dh>pk_aad_id</dh> file itself. If you lose this PK AAD ID, you will not be able to decrypt the encrypted data. (Be responsible.)
+					  </doc_para>
+
+					  <img class="doc_image" src="imgs/5_4.png"/>
+					  <doc_fig>Fig.5.4</doc_fig>
+
+					  <doc_para>
+						Once everything is set, click the <dh>Process</dh> button to begin encrypting your files. You can click the <dh>Logs</dh> button at the top left to view detailed process information (<dh>Fig5.7</dh>).
+					  </doc_para>
+
+					  <img class="doc_image" src="imgs/5_7.png"/>
+					  <doc_fig>Fig.5.7</doc_fig>
+
+					  <doc_para>
+						Since we selected <dh>Move</dh> as the output method, the encrypted files are now stored in the destination directory we provided (<dh>Fig5.5</dh>). If we check the original directory that contained the input files, we can see that it is now empty (<dh>Fig5.6</dh>).
+					  </doc_para>
+
+					  <img class="doc_image" src="imgs/5_5.png"/>
+					  <doc_fig>Fig.5.5</doc_fig>
+
+					  <img class="doc_image" src="imgs/5_6.png"/>
+					  <doc_fig>Fig.5.6</doc_fig>
+
+					  <doc_h2>Decrypting Files</doc_h2>
+
+					  <doc_para>
+						To decrypt files, you can use the same key configuration that was used to encrypt the data. If you generated a keyfile, select that keyfile and provide the password if the keyfile is encrypted. For this tutorial, we'll simply go to the <dh>Setup</dh> tab and change the function type to <dh>Decrypt</dh>, as shown in (<dh>Fig.5.8</dh>).
+					  </doc_para>
+
+					  <img class="doc_image" src="imgs/5_8.png"/>
+					  <doc_fig>Fig.5.8</doc_fig>
+
+					  <doc_para>
+						Afterward, return to the <dh>Data</dh> tab. In the <dh>Input</dh> section, select each of the original files and remove them by clicking the <dh>Remove</dh> button. Once the table is empty, drag and drop the encrypted files into the <dh>Input</dh> section. This time, instead of <dh>Move</dh>, we'll use <dh>Replace</dh> as the output method (<dh>Fig5.9</dh>).
+					  </doc_para>
+
+					  <img class="doc_image" src="imgs/5_9.png"/>
+					  <doc_fig>Fig.5.9</doc_fig>
+
+					  <doc_para>
+						Once everything is set, click the <dh>Process</dh> button to begin decrypting your files. After the process completes, if we check the directory that contained the encrypted input data, we can see that the encrypted files have been replaced with their decrypted versions (<dh>Fig5.10</dh>).
+					  </doc_para>
+
+					  <img class="doc_image" src="imgs/5_10.png"/>
+					  <doc_fig>Fig.5.10</doc_fig>
+					</div>
+
+					
+					<div class="doc_navigate_box">
+							<a href="3.html" ><p class="white_button"> Previous: Enc & Dec Text </p></a>
+							
+					</div>	
+				</div>	
+					
+			</main>
+			
+			<footer>
+				<div id="footer_serp"></div>
+				<p style="font-size:20px; margin-top:50px"><bg>Made with passion by </bg><a href="https://saaiqsas.github.io" class="footer_saaiqSAS"> saaiqSAS</a><bg> and Contributors</bg></p>
+				<br/>
+				<ft id="copyrights">Copyrights (©) 2024 Saaiq Abdulla Saeed</ft>
+				<ft>This website and its contents are generally licensed under the <a href="../../LICENSE.md">MIT License</a>, unless stated otherwise.</ft>
+				<div class="grid3_box" id="footer_grid">
+					<div>
+						<fh>Project Info</fh>
+						<ft><a href="../../about.html">About Project</a></ft>
+						<ft><a href="../../credits.html">Credits & Contributers</a></ft>
+						<ft><a href="../../docs.html">Documentation</a></ft>
+					</div>
+					<div>
+						<fh>Get Involved</fh>
+						<ft><a href="../../download.html">Download</a></ft>
+						<ft><a href="../../contribute.html">Contribute</a></ft>
+						<ft><a href="https://github.com/PurpleKrypt">Github</a></ft>
+					</div>
+					<div>
+						<fh>Legal & Support</fh>
+						<ft><a href="../../legal/privacy_policy.html">Privacy Policy</a></ft>
+						<ft><a href="../../legal/terms.html"> Terms and Conditions</a></ft>
+						<ft><a href="../../contact.html"> Contact & Report</a></ft>
+					</div>	
+				</div>
+				<script type="text/javascript">
+					// Copyrights
+					var currentYear = new Date().getFullYear();
+					document.getElementById('copyrights').textContent = "Copyrights (©) "+currentYear + " Saaiq Abdulla Saeed";
+				</script>
+			</footer>
+		
+		</body>
+		
+		<script src="../doc_dark_mode.js"></script>
+	</html>

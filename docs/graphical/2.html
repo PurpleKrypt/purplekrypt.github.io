@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title> PurpleKrypt  |  Documentation - Generating Keys in PurpleKrypt | Windows | Linux </title>
+			<link data-default-icon="../../imgs/favicon.png" rel="icon" sizes="192x192" href="../../imgs/PurpleKrypt_Icon_192x192.png" />
+			<meta name="viewport" content="width=device-width, initial-scale=0.8, shrink-to-fit=yes">
+			<meta charset="utf-8">
+		</head>
+		
+		<link rel="stylesheet" href="../../styles/fonts.css"/>
+		<link rel="stylesheet" href="../../styles/universal.css"/>
+		<link rel="stylesheet" href="../../styles/docs.css"/>
+		
+		<style type="text/css">
+		
+		</style>
+		
+		<body>
+		<!-- Navigation Bar Start-->
+			<div id="nav_bar">			
+				<a href="../../index.html"><div  id="nav_logo"><img style="height:100%;" src="../../imgs/PurpleKrypt_Logo_Name_36p.png"/></div></a>				
+				<div id="nav_buttons_box_desktop">
+					<a href="../../about.html"><p class="nav_buttons"> About </p></a>								
+					<a href="../../docs.html"><p class="nav_buttons"> Documentation </p></a>
+					<a href="https://github.com/PurpleKrypt"><p class="nav_buttons">Github</p></a>	
+					<a href="../../credits.html"><p class="nav_buttons"> Credits </p></a>
+				</div>						
+				<a href="../../download.html" ><div id="nav_download_button_box"><p id="nav_download_button"> Download </p></div></a>	
+				<div id="nav_dropdown_button">
+				<svg id="nav_dropdown_more_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="40" height="40">
+					<rect x="5" y="5" width="20" height="2" fill="#E6E6E6"/><rect x="5" y="11" width="20" height="2" fill="#E6E6E6"/><rect x="5" y="17" width="20" height="2" fill="#E6E6E6"/>
+				</svg>	
+				<svg id="nav_dropdown_close_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+					<rect x="1" y="10" width="16" height="2" fill="#ffffff" transform="rotate(45 12 12)"/><rect x="8" y="3" width="2" height="16" fill="#ffffff" transform="rotate(45 12 12)"/>
+				</svg>		
+				</div>			
+			</div>
+			<div id="nav_dropdown_content">
+				<a href="../../about.html">About</a>
+				<a href="../../docs.html">Documentation</a>
+				<a href="https://github.com/PurpleKrypt">Github</a>
+				<a href="../../credits.html">Credits</a>
+				<a href="../../download.html">Download</a>
+			</div>	
+			<script type="text/javascript">
+				// nav dropdown toggle script
+					const dropdownButton = document.getElementById('nav_dropdown_button');
+					const dropdownContent = document.getElementById('nav_dropdown_content');
+					const dropdownClose = document.getElementById('nav_dropdown_close_icon');
+					const dropdownMore = document.getElementById('nav_dropdown_more_icon');
+					dropdownButton.addEventListener('click', function() {
+					  if (dropdownContent.style.display === 'block') {
+						dropdownContent.style.display = 'none'; 
+						dropdownClose.style.display = 'none'; 
+						dropdownMore.style.display = 'block'; 
+					  } else {
+						dropdownContent.style.display = 'block';
+						dropdownClose.style.display = 'block'; 
+						dropdownMore.style.display = 'none'; 
+					  }
+					});
+			</script>
+			<!-- Navigation Bar End-->
+				
+			<main>
+				<div class="restricted_width_box">
+					<div class="doc_path_box">
+					
+						<doc_path_text>
+							<a href="../../docs.html" class="pl">Documentation</a> / 
+							<a href="graphical.html" class="pl">Graphical</a> /
+							<a href="" class="pl">Generating Keys</a>
+						</doc_path_text>  
+						
+						<div class="doc_check_box">
+							<label for="darkModeToggle">Dark Mode:</label>
+							<input type="checkbox" id="darkModeToggle">
+						</div>
+					</div>
+
+					<div id="doc_page">
+					  <doc_h1> 2. Generating Keys </doc_h1>
+
+					  <doc_author>by: saaiqSAS</doc_author>
+					  <doc_date>Last Updated: 9/2/2026</doc_date>
+
+					  <doc_para> 
+						In this section, we'll cover the different ways you can generate and use keys in PurpleKrypt. As shown in (<dh>Fig.2.1</dh>), the right half of
+						the <dh>Setup</dh> tab is responsible for configuring keys.
+					  </doc_para>
+
+					  <img class="doc_image" src="imgs/2_1.png"/>
+					  <doc_fig>Fig.2.1</doc_fig>
+					  
+					  <doc_para> 
+						PurpleKrypt supports three different key configurations:
+					  </doc_para>
+
+					  <doc_point>
+						<b>1. Keyfile encrypted with password</b> – Keyfile: <dh>Generate</dh>, Password: <dh>Use</dh>
+					  </doc_point>
+
+					  <doc_point>
+						<b>2. Unencrypted keyfile</b> – Keyfile: <dh>Generate</dh>, Password: <dh>None</dh>
+					  </doc_point>
+
+					  <doc_point>
+						<b>3. Password only</b> – Keyfile: <dh>None</dh>, Password: <dh>Use</dh>
+					  </doc_point>
+					  
+					  <doc_para> 
+						The <dh>Select</dh> option (or drag-and-drop a keyfile) should be used if you want to work with an existing keyfile.
+						This keyfile may be encrypted or unencrypted, depending on whether a password was used when it was generated. Note that the application
+						has no way of determining whether a keyfile is encrypted or not; therefore, it is your responsibility to remember.
+						Keyfiles selected using the <dh>Select</dh> option are not limited to decryption and can also be used to encrypt additional data.
+					  </doc_para>
+
+					  <doc_para> 
+						An encrypted keyfile can also be used without providing the password. In this case, the key extracted into memory will differ from the key
+						generated when the correct password is supplied. As a result, data encrypted with a password requires the password to be decrypted correctly,
+						while data encrypted without a password must be decrypted without one. Note that this behavior does not apply to unencrypted keyfiles.
+						In other words, you cannot use a password with an unencrypted keyfile.
+						(This behavior was originally a bug but is now treated as a "feature". If it is later proven to be a security risk, this "feature" will be removed.)
+					  </doc_para>
+					  
+					  <doc_para> 
+						Once you have selected your desired options and provided any required input in the <dh>Setup</dh> tab, click the
+						<dh>Confirm</dh> button. This confirms the selected keyfile and password options and saves your choices to memory
+						(not the key itself). If you later change any options or inputs in the <dh>Keyfile</dh> or <dh>Password</dh>
+						boxes, you must click the <dh>Confirm</dh> button again for the changes to take effect. The <dh>Function</dh> and
+						<dh>Data Type</dh> options, however, are updated immediately when selected and are not tied to the <dh>Confirm</dh> button.
+					  </doc_para>
+					  
+					  <doc_para> 
+						After clicking the <dh>Confirm</dh> button, you will automatically be taken to the <dh>Data</dh> tab. If desired,
+						you can return to the <dh>Setup</dh> tab and review the <dh>Summary</dh> box for key usage confirmation details.
+					  </doc_para>
+					  
+					  <doc_para>
+						On the <dh>Data</dh> tab, once you have provided your input data, click the <dh>Process</dh> button. The actual key
+						is loaded into memory only after clicking <dh>Process</dh>. At that point, a key icon will appear in the top-left bar,
+						indicating that the key is currently stored in memory.
+					  </doc_para>
+					</div>
+
+					
+					<div class="doc_navigate_box">
+							<a href="1.html" ><p class="white_button"> Previous: User Interface </p></a>
+							<a href="3.html" ><p class="blue_button"> Next: Enc & Dec Text </p></a>
+					</div>	
+				</div>	
+					
+			</main>
+			
+			<footer>
+				<div id="footer_serp"></div>
+				<p style="font-size:20px; margin-top:50px"><bg>Made with passion by </bg><a href="https://saaiqsas.github.io" class="footer_saaiqSAS"> saaiqSAS</a><bg> and Contributors</bg></p>
+				<br/>
+				<ft id="copyrights">Copyrights (©) 2024 Saaiq Abdulla Saeed</ft>
+				<ft>This website and its contents are generally licensed under the <a href="../../LICENSE.md">MIT License</a>, unless stated otherwise.</ft>
+				<div class="grid3_box" id="footer_grid">
+					<div>
+						<fh>Project Info</fh>
+						<ft><a href="../../about.html">About Project</a></ft>
+						<ft><a href="../../credits.html">Credits & Contributers</a></ft>
+						<ft><a href="../../docs.html">Documentation</a></ft>
+					</div>
+					<div>
+						<fh>Get Involved</fh>
+						<ft><a href="../../download.html">Download</a></ft>
+						<ft><a href="../../contribute.html">Contribute</a></ft>
+						<ft><a href="https://github.com/PurpleKrypt">Github</a></ft>
+					</div>
+					<div>
+						<fh>Legal & Support</fh>
+						<ft><a href="../../legal/privacy_policy.html">Privacy Policy</a></ft>
+						<ft><a href="../../legal/terms.html"> Terms and Conditions</a></ft>
+						<ft><a href="../../contact.html"> Contact & Report</a></ft>
+					</div>	
+				</div>
+				<script type="text/javascript">
+					// Copyrights
+					var currentYear = new Date().getFullYear();
+					document.getElementById('copyrights').textContent = "Copyrights (©) "+currentYear + " Saaiq Abdulla Saeed";
+				</script>
+			</footer>
+		
+		</body>
+		
+		<script src="../doc_dark_mode.js"></script>
+	</html>

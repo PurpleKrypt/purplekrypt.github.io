@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://purplekrypt.github.io/sitemap.xml

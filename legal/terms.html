@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title> PurpleKrypt  |  Terms and Conditions </title>
+			<link data-default-icon="../imgs/favicon.png" rel="icon" sizes="192x192" href="../imgs/PurpleKrypt_Icon_192x192.png" />
+			<meta name="viewport" content="width=device-width, initial-scale=0.8, shrink-to-fit=yes">
+			<meta charset="utf-8">
+		</head>
+
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-HM2Y8ZN2PM"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-HM2Y8ZN2PM');
+		</script>
+		
+		<link rel="stylesheet" href="../styles/fonts.css"/>
+		<link rel="stylesheet" href="../styles/universal.css"/>
+		
+		<style type="text/css">
+			t {
+				margin-top:20px;
+				margin-bottom:20px;
+			}
+			
+			.restricted_width_box {
+				padding: 20px;
+				max-width: 850px;
+			}
+		</style>
+		
+		<body>
+		
+			<!-- Navigation Bar Start-->
+			<div id="nav_bar">			
+				<a href="../index.html"><div  id="nav_logo"><img style="height:100%;" src="../imgs/PurpleKrypt_Logo_Name_36p.png"/></div></a>				
+				<div id="nav_buttons_box_desktop">
+					<a href="../about.html"><p class="nav_buttons"> About </p></a>								
+					<a href="../docs.html"><p class="nav_buttons"> Documentation </p></a>
+					<a href="https://github.com/PurpleKrypt"><p class="nav_buttons">Github</p></a>	
+					<a href="../credits.html"><p class="nav_buttons"> Credits </p></a>
+				</div>						
+				<a href="../download.html" ><div id="nav_download_button_box"><p id="nav_download_button"> Download </p></div></a>	
+				<div id="nav_dropdown_button">
+				<svg id="nav_dropdown_more_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="40" height="40">
+					<rect x="5" y="5" width="20" height="2" fill="#E6E6E6"/><rect x="5" y="11" width="20" height="2" fill="#E6E6E6"/><rect x="5" y="17" width="20" height="2" fill="#E6E6E6"/>
+				</svg>	
+				<svg id="nav_dropdown_close_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+					<rect x="1" y="10" width="16" height="2" fill="#ffffff" transform="rotate(45 12 12)"/><rect x="8" y="3" width="2" height="16" fill="#ffffff" transform="rotate(45 12 12)"/>
+				</svg>		
+				</div>			
+			</div>
+			<div id="nav_dropdown_content">
+				<a href="../about.html">About</a>
+				<a href="../docs.html">Documentation</a>
+				<a href="https://github.com/PurpleKrypt">Github</a>
+				<a href="../credits.html">Credits</a>
+				<a href="../download.html">Download</a>
+			</div>	
+			<script type="text/javascript">
+				// nav dropdown toggle script
+					const dropdownButton = document.getElementById('nav_dropdown_button');
+					const dropdownContent = document.getElementById('nav_dropdown_content');
+					const dropdownClose = document.getElementById('nav_dropdown_close_icon');
+					const dropdownMore = document.getElementById('nav_dropdown_more_icon');
+					dropdownButton.addEventListener('click', function() {
+					  if (dropdownContent.style.display === 'block') {
+						dropdownContent.style.display = 'none'; 
+						dropdownClose.style.display = 'none'; 
+						dropdownMore.style.display = 'block'; 
+					  } else {
+						dropdownContent.style.display = 'block';
+						dropdownClose.style.display = 'block'; 
+						dropdownMore.style.display = 'none'; 
+					  }
+					});
+			</script>
+			<!-- Navigation Bar End-->
+				
+			<main>
+					<h1> Terms and Conditions </h1>
+				
+					<div class="restricted_width_box" >
+						<t><b>Effective Date: 14/2/2026</b><t/>
+						<t>
+						By downloading, installing, or using the PurpleKrypt Graphical Tool (the "Tool," the "Software," or "PurpleKrypt"), you agree to comply
+						with and be bound by the following terms and conditions. If you do not agree with these terms, do not use the Tool.
+						<t/>
+						
+					</div>
+					</br></br>
+					
+					<div class="restricted_width_box" >
+						<h5>1. License</h5>
+						<t>
+						The PurpleKrypt Graphical Tool is an open-source Software released under the GNU
+						General Public License (GPL) v3.0. You are free to use, modify, and distribute the Tool in accordance with
+						the terms of the GPLv3 license.
+						<t/>
+						<t>
+						For more details on the terms of the GPLv3 license, visit <a href=""><l>GNU General Public License v3.0.</l></a>
+						<t/>
+						
+					</div>
+					</br></br>
+					
+					<div class="restricted_width_box" >
+						<h5>2. Software Description</h5>
+						<t>
+							PurpleKrypt Graphical Tool is an open-source encryption application designed to securely encrypt 
+							and decrypt both files and text. The Software supports key generation derived from a user-defined password, a key file, or a combination of both.
+						</t>
+						<t>
+							Key material derived from passwords is generated using the Argon2id key derivation function provided by 
+							the Bouncy Castle cryptographic library. Encryption and decryption operations are performed using the AES-256-GCM algorithm,
+							as implemented by the Java Cryptography Extension (JCE).
+						</t>
+						
+					</div>
+					</br></br>
+					
+					<div class="restricted_width_box" >
+						<h5>3. No Data Collection</h5>
+						<t>
+						PurpleKrypt Graphical Tool does not collect any data. The Software operates locally
+						on your device, and no personal information, usage data, or other data is transmitted to external servers
+						or third parties.
+						<t/>
+						
+					</div>
+					</br></br>
+					
+					<div class="restricted_width_box" >
+						<h5>4. No Warranty / "As-Is" Basis</h5>
+						<t>
+						The Tool is provided on an "as-is" basis, with no warranty of any kind, express or implied, including but
+						not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement. The
+						developers and contributors to the Tool make no claims regarding the Tool’s performance, security, or
+						suitability for any particular use case.
+						<t/>
+						<t>
+						You agree to use the Tool at your own risk. The developers and contributors shall not be held liable for
+						any damages, including but not limited to loss of data, system malfunctions, or any indirect, incidental,
+						or consequential damages arising from the use or inability to use the Tool
+						<t/>
+						
+					</div>
+					</br></br>
+					
+					<div class="restricted_width_box" >
+						<h5>5. No Modification of Data</h5>
+						<t>
+						The Tool does not automatically alter or modify any original input data. By default, it operates by creating an encrypted or decrypted copy of the input data.
+						</t>
+						<t>
+						The user is provided with an optional setting to remove the original input data after the copy has been successfully created. If enabled, this option should be
+						used with caution and does not guarantee secure, irreversible, or unrecoverable data removal from the storage device.
+						</t>
+						<t>
+						The developers and contributors of the Tool shall not be held responsible or liable for any data corruption, data loss, or any data that may remain recoverable
+						after deletion.
+						</t>
+						<t>
+						You are solely responsible for verifying and maintaining the integrity of the original data both before and after any encryption or decryption operation.
+						</t>
+						
+					</div>
+					</br></br>
+					
+					<div class="restricted_width_box" >
+						<h5>6. Keyfile and Password Safekeeping</h5>
+						<t>
+						The Tool may generate encrypted or unencrypted key files containing cryptographic keys that are essential for encrypting and decrypting data. You are solely
+						responsible for securely storing and backing up these key files.
+						</t>
+						<t>
+						If a key file is lost, corrupted, or otherwise rendered unusable, the associated data cannot be decrypted. The Tool may not automatically detect whether a key
+						file is encrypted; therefore, it is your responsibility to know which key files are encrypted and to remember the password used to protect them.
+						</t>
+						<t>
+						For data encrypted using a key derived solely from a password, you are responsible for remembering the password used for encryption, as it will be required
+						to decrypt the data.						
+						</t>
+						<t>
+						The developers and contributors shall not be held responsible or liable for the loss, corruption, theft, or misuse of key files or passwords.
+						</t>
+						<t>
+						You are strongly advised to maintain multiple secure backups of all key files and to store passwords securely in reliable and protected locations.
+						</t>
+					</div>
+					</br></br>
+					
+					<div class="restricted_width_box" >
+						<h5>7. PK AAD ID Safekeeping</h5>
+						<t>
+						The Tool generates a file named "pk_aad_id" the first time the Software is run. This file contains a randomly
+						generated identifier that may be used as Additional Authenticated Data (AAD) during file encryption. By default, this
+						feature is disabled; however, the user may choose to enable it.
+						</t>
+						<t>
+						When the "PK AAD ID" is used, any data encrypted using the "pk_aad_id" as Additional Authenticated
+						Data (AAD) cannot be decrypted on another or the same installation or copy of the Software without access to the same
+						"pk_aad_id" file, even if the correct key file and/or password are provided.
+						</t>
+						<t>
+						If the "pk_aad_id" file or the associated Software instance is lost, corrupted, or otherwise rendered
+						unusable, the encrypted data cannot be decrypted. You are solely responsible for maintaining and safeguarding the
+						"pk_aad_id" file.
+						</t>
+						<t>
+						The developers and contributors shall not be held responsible or liable for the loss, corruption, theft, or misuse of
+						the "pk_aad_id" file or any data associated with it.
+						</t>
+						<t>
+						You are strongly advised to maintain multiple secure backups of the "pk_aad_id" file and any associated
+						Software installations in reliable and protected locations.
+						</t>
+					</div>
+					</br></br>
+					
+					<div class="restricted_width_box" >
+						<h5>8. Limitation of Liability</h5>
+						<t>
+						To the fullest extent permitted by applicable law, in no event shall the developers or contributors of the Tool be liable
+						for any direct, indirect, incidental, special, exemplary, or consequential damages arising out of or in connection with
+						the use or inability to use the Tool. This includes, but is not limited to, loss of data, data corruption, loss of
+						encryption keys, loss of key files, loss of passwords, loss of Additional Authenticated Data (PK_AAD_ID), or any other
+						damages, even if the developers or contributors have been advised of the possibility of such damages.
+						</t>
+						<t>
+						The Tool is provided with the understanding that its use involves inherent risks. Any damage, loss, or adverse outcome
+						resulting from the use, misuse, or incorrect operation of the Software is solely the responsibility of the user.
+						</t>
+						
+					</div>
+					</br></br>
+					
+					<div class="restricted_width_box" >
+						<h5>9. Modification and Distribution</h5>
+						<t>
+						You may use, modify, and distribute the Software in accordance with the terms of the GNU General Public License version 3 (GPLv3).
+						However, if you redistribute the Tool or any modified version of it, you must:
+						<t/>
+						<t>
+						• Provide proper credit and acknowledgment to the original developers and contributors.
+						<t/>
+						<t>
+						• Include a copy of, or a link to, this Terms and Conditions document.
+						<t/>
+						<t>
+						• Ensure that the applicable license terms are respected and that users are informed that the Software is released under the GPLv3.
+						<t/>
+						
+					</div>
+					</br></br>
+					
+					<div class="restricted_width_box" >
+						<h5>10. Indemnification</h5>
+						<t>
+						You agree to indemnify and hold the developers, contributors, and affiliated entities harmless from any 
+						claims, losses, damages, or legal expenses arising from your use or misuse of the Tool. This includes 
+						any third-party claims resulting from your actions or inactions.
+						<t/>
+						
+					</div>
+					</br></br>
+					
+					<div class="restricted_width_box" >
+						<h5>11. Changes to Terms</h5>
+						<t>
+						We reserve the right to update or modify these Terms at any time. Any changes will be posted on the official 
+						website or distribution platform, and the updated Terms will be effective upon posting. It is your responsibility 
+						to review these Terms periodically to stay informed of any changes.
+						<t/>
+						
+					</div>
+					</br></br>
+					
+					<div class="restricted_width_box" >
+						<h5>12. Governing Law</h5>
+						<t>
+						These Terms and Conditions shall be governed by and construed in accordance with the laws applicable in the 
+						user's jurisdiction, without regard to its conflict of law principles.
+						<t/>
+						
+					</div>
+					</br></br>
+					
+					<div class="restricted_width_box" >
+						<h5>13. Contact Information</h5>
+						<t>
+						If you have any questions regarding these Terms and Conditions or need further clarification, please
+						contact us at:
+						<t/>
+						<t>
+						purplekrypt@gmail.com
+						<t/>
+						
+					</div>
+					</br></br>
+					
+					<div class="restricted_width_box" >
+						<h5>Conclusion</h5>
+						<t>
+						By using the PurpleKrypt Graphical Tool, you acknowledge that you have read,
+						understood, and agree to these Terms and Conditions.
+						<t/>
+						
+					</div>
+					</br></br>
+
+			</main>
+			
+			<footer>
+				<div id="footer_serp"></div>
+				<p style="font-size:20px; margin-top:50px"><bg>Made with passion by </bg><a href="https://saaiqsas.github.io" class="footer_saaiqSAS"> saaiqSAS</a><bg> and Contributors</bg></t>
+				<br/>
+				<ft id="copyrights">Copyrights (©) 2024 Saaiq Abdulla Saeed</ft>
+				<ft>This website and its contents are generally licensed under the <a href="../LICENSE.md">MIT License</a>, unless stated otherwise.</ft>
+				<div class="grid3_box" id="footer_grid">
+					<div>
+						<fh>Project Info</fh>
+						<ft><a href="../about.html">About Project</a></ft>
+						<ft><a href="../credits.html">Credits & Contributers</a></ft>
+						<ft><a href="../docs.html">Documentation</a></ft>
+					</div>
+					<div>
+						<fh>Get Involved</fh>
+						<ft><a href="../download.html">Download</a></ft>
+						<ft><a href="../contribute.html">Contribute</a></ft>
+						<ft><a href="https://github.com/PurpleKrypt">Github</a></ft>
+					</div>
+					<div>
+						<fh>Legal & Support</fh>
+						<ft><a href="../legal/privacy_policy.html">Privacy Policy</a></ft>
+						<ft><a href="../legal/terms.html"> Terms and Conditions</a></ft>
+						<ft><a href="../contact.html"> Contact & Report</a></ft>
+					</div>	
+				</div>
+				<script type="text/javascript">
+					// Copyrights
+					var currentYear = new Date().getFullYear();
+					document.getElementById('copyrights').textContent = "Copyrights (©) "+currentYear + " Saaiq Abdulla Saeed";
+				</script>
+			</footer>
+		
+		</body>
+	</html>

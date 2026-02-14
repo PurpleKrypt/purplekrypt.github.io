@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title> PurpleKrypt  |  About Project </title>
+			<link data-default-icon="imgs/favicon.png" rel="icon" sizes="192x192" href="imgs/PurpleKrypt_Icon_192x192.png" />
+			<meta name="viewport" content="width=device-width, initial-scale=0.8, shrink-to-fit=yes">
+			<meta charset="utf-8">
+		</head>
+		
+
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-HM2Y8ZN2PM"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-HM2Y8ZN2PM');
+		</script>
+		
+		<link rel="stylesheet" href="styles/fonts.css"/>
+		<link rel="stylesheet" href="styles/universal.css"/>
+		
+		<style type="text/css">
+			t {
+				margin-top:20px;
+				margin-bottom:20px;
+			}
+			
+			.restricted_width_box {
+				padding: 20px;
+				padding-top: 0px;
+				max-width: 850px;
+			}
+		</style>
+		
+		<body>
+		
+			<!-- Navigation Bar Start-->
+			<div id="nav_bar">			
+				<a href="index.html"><div  id="nav_logo"><img style="height:100%;" src="imgs/PurpleKrypt_Logo_Name_36p.png"/></div></a>				
+				<div id="nav_buttons_box_desktop">
+					<a href="about.html"><p class="nav_buttons"> About </p></a>								
+					<a href="docs.html"><p class="nav_buttons"> Documentation </p></a>
+					<a href="https://github.com/PurpleKrypt"><p class="nav_buttons">Github</p></a>	
+					<a href="credits.html"><p class="nav_buttons"> Credits </p></a>
+				</div>						
+				<a href="download.html" ><div id="nav_download_button_box"><p id="nav_download_button"> Download </p></div></a>	
+				<div id="nav_dropdown_button">
+				<svg id="nav_dropdown_more_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="40" height="40">
+					<rect x="5" y="5" width="20" height="2" fill="#E6E6E6"/><rect x="5" y="11" width="20" height="2" fill="#E6E6E6"/><rect x="5" y="17" width="20" height="2" fill="#E6E6E6"/>
+				</svg>	
+				<svg id="nav_dropdown_close_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+					<rect x="1" y="10" width="16" height="2" fill="#ffffff" transform="rotate(45 12 12)"/><rect x="8" y="3" width="2" height="16" fill="#ffffff" transform="rotate(45 12 12)"/>
+				</svg>		
+				</div>			
+			</div>
+			<div id="nav_dropdown_content">
+				<a href="about.html">About</a>
+				<a href="docs.html">Documentation</a>
+				<a href="https://github.com/PurpleKrypt">Github</a>
+				<a href="credits.html">Credits</a>
+				<a href="download.html">Download</a>
+			</div>	
+			<script type="text/javascript">
+				// nav dropdown toggle script
+					const dropdownButton = document.getElementById('nav_dropdown_button');
+					const dropdownContent = document.getElementById('nav_dropdown_content');
+					const dropdownClose = document.getElementById('nav_dropdown_close_icon');
+					const dropdownMore = document.getElementById('nav_dropdown_more_icon');
+					dropdownButton.addEventListener('click', function() {
+					  if (dropdownContent.style.display === 'block') {
+						dropdownContent.style.display = 'none'; 
+						dropdownClose.style.display = 'none'; 
+						dropdownMore.style.display = 'block'; 
+					  } else {
+						dropdownContent.style.display = 'block';
+						dropdownClose.style.display = 'block'; 
+						dropdownMore.style.display = 'none'; 
+					  }
+					});
+			</script>
+			<!-- Navigation Bar End-->
+				
+			<main>
+					<h1> About Project </h1>
+				
+					<div class="restricted_width_box" >
+						<t>
+						Created by Saaiq Abdulla Saeed (saaiqSAS) and supported by contributors, PurpleKrypt is dedicated to delivering convenient and reliable tools for securing data across multiple platforms. Designed with full offline functionality, it enables local file and text encryption using AES-256-GCM, either with a keyfile or with encryption keys securely derived from a password using Argon2id.
+						<t/>
+						<t>
+						PurpleKrypt leverages Java’s standard security libraries for AES-256-GCM encryption and relies on Bouncy Castle for Argon2id-based key derivation. Lightweight, portable, and cross-platform through open-source technologies, PurpleKrypt provides a simple, efficient, and trustworthy way to protect your data wherever you use it.
+						<t/>
+					
+						
+					
+						
+						
+						
+					</div>
+					</br></br>
+					
+					
+
+			</main>
+			
+			<footer>
+				<div id="footer_serp"></div>
+				<p style="font-size:20px; margin-top:50px"><bg>Made with passion by </bg><a href="https://saaiqsas.github.io" class="footer_saaiqSAS"> saaiqSAS</a><bg> and Contributors</bg></p>
+				<br/>
+				<ft id="copyrights">Copyrights (©) 2024 Saaiq Abdulla Saeed</ft>
+				<ft>This website and its contents are generally licensed under the <a href="LICENSE.md">MIT License</a>, unless stated otherwise.</ft>
+				<div class="grid3_box" id="footer_grid">
+					<div>
+						<fh>Project Info</fh>
+						<ft><a href="about.html">About Project</a></ft>
+						<ft><a href="credits.html">Credits & Contributers</a></ft>
+						<ft><a href="docs.html">Documentation</a></ft>
+					</div>
+					<div>
+						<fh>Get Involved</fh>
+						<ft><a href="download.html">Download</a></ft>
+						<ft><a href="contribute.html">Contribute</a></ft>
+						<ft><a href="https://github.com/PurpleKrypt">Github</a></ft>
+					</div>
+					<div>
+						<fh>Legal & Support</fh>
+						<ft><a href="legal/privacy_policy.html">Privacy Policy</a></ft>
+						<ft><a href="legal/terms.html"> Terms and Conditions</a></ft>
+						<ft><a href="contact.html"> Contact & Report</a></ft>
+					</div>	
+				</div>
+				<script type="text/javascript">
+					// Copyrights
+					var currentYear = new Date().getFullYear();
+					document.getElementById('copyrights').textContent = "Copyrights (©) "+currentYear + " Saaiq Abdulla Saeed";
+				</script>
+			</footer>
+		
+		</body>
+	</html>

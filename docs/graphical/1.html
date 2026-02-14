@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title> PurpleKrypt  |  Documentation - User Interface of PurpleKrypt</title>
+			<link data-default-icon="../../imgs/favicon.png" rel="icon" sizes="192x192" href="../../imgs/PurpleKrypt_Icon_192x192.png" />
+			<meta name="viewport" content="width=device-width, initial-scale=0.8, shrink-to-fit=yes">
+			<meta charset="utf-8">
+		</head>
+		
+		<link rel="stylesheet" href="../../styles/fonts.css"/>
+		<link rel="stylesheet" href="../../styles/universal.css"/>
+		<link rel="stylesheet" href="../../styles/docs.css"/>
+		
+		<style type="text/css">
+		
+		</style>
+		
+		<body>
+		<!-- Navigation Bar Start-->
+			<div id="nav_bar">			
+				<a href="../../index.html"><div  id="nav_logo"><img style="height:100%;" src="../../imgs/PurpleKrypt_Logo_Name_36p.png"/></div></a>				
+				<div id="nav_buttons_box_desktop">
+					<a href="../../about.html"><p class="nav_buttons"> About </p></a>								
+					<a href="../../docs.html"><p class="nav_buttons"> Documentation </p></a>
+					<a href="https://github.com/PurpleKrypt"><p class="nav_buttons">Github</p></a>	
+					<a href="../../credits.html"><p class="nav_buttons"> Credits </p></a>
+				</div>						
+				<a href="../../download.html" ><div id="nav_download_button_box"><p id="nav_download_button"> Download </p></div></a>	
+				<div id="nav_dropdown_button">
+				<svg id="nav_dropdown_more_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="40" height="40">
+					<rect x="5" y="5" width="20" height="2" fill="#E6E6E6"/><rect x="5" y="11" width="20" height="2" fill="#E6E6E6"/><rect x="5" y="17" width="20" height="2" fill="#E6E6E6"/>
+				</svg>	
+				<svg id="nav_dropdown_close_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+					<rect x="1" y="10" width="16" height="2" fill="#ffffff" transform="rotate(45 12 12)"/><rect x="8" y="3" width="2" height="16" fill="#ffffff" transform="rotate(45 12 12)"/>
+				</svg>		
+				</div>			
+			</div>
+			<div id="nav_dropdown_content">
+				<a href="../../about.html">About</a>
+				<a href="../../docs.html">Documentation</a>
+				<a href="https://github.com/PurpleKrypt">Github</a>
+				<a href="../../credits.html">Credits</a>
+				<a href="../../download.html">Download</a>
+			</div>	
+			<script type="text/javascript">
+				// nav dropdown toggle script
+					const dropdownButton = document.getElementById('nav_dropdown_button');
+					const dropdownContent = document.getElementById('nav_dropdown_content');
+					const dropdownClose = document.getElementById('nav_dropdown_close_icon');
+					const dropdownMore = document.getElementById('nav_dropdown_more_icon');
+					dropdownButton.addEventListener('click', function() {
+					  if (dropdownContent.style.display === 'block') {
+						dropdownContent.style.display = 'none'; 
+						dropdownClose.style.display = 'none'; 
+						dropdownMore.style.display = 'block'; 
+					  } else {
+						dropdownContent.style.display = 'block';
+						dropdownClose.style.display = 'block'; 
+						dropdownMore.style.display = 'none'; 
+					  }
+					});
+			</script>
+			<!-- Navigation Bar End-->
+				
+			<main>
+				<div class="restricted_width_box">
+					<div class="doc_path_box">
+					
+						<doc_path_text>
+							<a href="../../docs.html" class="pl">Documentation</a> / 
+							<a href="graphical.html" class="pl">Graphical</a> /
+							<a href="" class="pl">User Interface</a>
+						</doc_path_text>  
+						
+						<div class="doc_check_box">
+							<label for="darkModeToggle">Dark Mode:</label>
+							<input type="checkbox" id="darkModeToggle">
+						</div>
+					</div>
+
+					<div id="doc_page">
+					  <doc_h1> 1. User Interface </doc_h1>
+
+					  <doc_author>by: saaiqSAS</doc_author>
+					  <doc_date>Last Updated: 9/2/2026</doc_date>
+					  
+					  <doc_para>
+						In this section, we will explore the core layout of PurpleKrypt, highlighting its key features and providing a step-by-step overview to help you
+						navigate its main sections. Below, in <dh>Fig.1.1</dh>, you can see the overall layout of the tool.
+					  </doc_para>
+					  
+					  <img class="doc_image" src="imgs/1_1.png"/>
+					  <doc_fig>Fig.1.1</doc_fig>
+					  
+					  <doc_h2>Keyfile and Password</doc_h2>
+
+					  <doc_para> 
+						<dh>Fig.1.1</dh> shows the layout of the <dh>Setup</dh> tab. The right half of the interface, where the <dh>Keyfile</dh> and <dh>Password</dh> boxes
+						are located, is responsible for key usage configuration.
+					  </doc_para>
+					  
+					  <doc_para> 
+						PurpleKrypt supports three different key configurations:
+					  </doc_para>
+
+					  <doc_point><b>1. Keyfile encrypted with password</b> – Keyfile: <dh>Generate</dh>, Password: <dh>Use</dh></doc_point>
+					  <doc_point><b>2. Unencrypted keyfile</b> – Keyfile: <dh>Generate</dh>, Password: <dh>None</dh></doc_point>
+					  <doc_point><b>3. Password only</b> – Keyfile: <dh>None</dh>, Password: <dh>Use</dh></doc_point>
+					  
+					  <doc_para> 
+						The <dh>Select</dh> option (or drag and drop a keyfile) should be used if you want to work with an existing keyfile.
+						This keyfile may be encrypted or unencrypted, depending on whether a password was used during its creation. Note that the application
+						has no method of identifying whether a keyfile is encrypted; therefore, it is your responsibility to remember.
+						Keyfiles selected using the <dh>Select</dh> option are not limited to decryption and can also be used to encrypt additional data.
+					  </doc_para>
+
+					  <doc_para> 
+						A selected encrypted keyfile can also be used without providing the password. In this case, the key loaded into memory will differ from the key
+						generated when the correct password is supplied. As a result, data encrypted with a password requires the password to decrypt correctly,
+						while data encrypted without a password must be decrypted without one. This behavior does not apply to unencrypted keyfiles.
+						In other words, a password cannot be used with an unencrypted keyfile.
+						(This behavior was originally a bug and is now treated as a "feature". If it is later determined to be a security risk, this "feature" will be removed.)
+					  </doc_para>
+					  
+					  <doc_para> 
+						Once you have selected your desired options and provided any required input in the <dh>Setup</dh> tab, click the
+						<dh>Confirm</dh> button. This confirms your keyfile and password selections and stores the configuration in memory
+						(not the key itself). If you later modify any options or inputs in the <dh>Keyfile</dh> or <dh>Password</dh>
+						boxes, you must click the <dh>Confirm</dh> button again for the changes to take effect. The <dh>Function</dh> and
+						<dh>Data Type</dh> options, however, update immediately when selected and are not tied to the <dh>Confirm</dh> button.
+					  </doc_para>
+					  
+					  <doc_para> 
+						After clicking the <dh>Confirm</dh> button, you will automatically be taken to the <dh>Data</dh> tab.
+					  </doc_para>
+					  
+					  <doc_h2>Data Tab</doc_h2>
+
+					  <doc_para> 
+						The <dh>Data</dh> tab is where you manage inputs and outputs, whether they are files or text. The layout of this tab
+						changes based on the <dh>Input Type</dh> option (<dh>File</dh> or <dh>Text</dh>) selected in the <dh>Setup</dh> tab.
+					  </doc_para>
+					  
+					  <img class="doc_image" src="imgs/1_4.png"/>
+					  <doc_fig>Fig.1.4</doc_fig>
+					  
+					  <doc_para> 
+						In <dh>Fig.1.4</dh>, you can see the layout of the <dh>Data</dh> tab when <dh>File</dh> is selected. On the left side,
+						under the <dh>Input</dh> section, is a table displaying the files and directories selected for processing.
+						You can add files or directories using the provided buttons or by dragging and dropping them into the table.
+						To remove an item, select it from the table and click <dh>Remove</dh>.
+					  </doc_para>
+					  
+					  <doc_para> 
+						On the right side, you will find two sections: <dh>Output Method</dh> and <dh>Process Settings</dh>.
+					  </doc_para> 
+					  
+					  <doc_para> 
+						Under <dh>Output Method</dh>, you can choose one of the following options:
+					  </doc_para> 
+					  
+					  <doc_point><b>1. </b><dh>Copy</dh> keeps the input files untouched while saving the processed (encrypted or decrypted) files to the specified destination directory.</doc_point>
+
+					  <doc_point><b>2. </b><dh>Move</dh> saves the processed files to the destination directory and then securely deletes the input files if no errors occur during processing. The secure delete method used by PurpleKrypt overwrites the file multiple times with different binary patterns before deletion.</doc_point>
+
+					  <doc_point><b>3. </b><dh>Replace</dh> saves the processed files to their original locations and, if no errors occur, securely deletes the original input files.</doc_point>
+					  
+					  <doc_para> 
+						Under <dh>Process Settings</dh>, you can configure the number of files to process in parallel, choose whether to assign random filenames to encrypted files,
+						and enable or disable PK AAD ID. The PK AAD ID is an array of numbers generated the first time PurpleKrypt is launched and stored in the
+						<dh>pk_aad_id</dh> file. When enabled, this data is included during encryption (used as AAD for AES-256) and prevents decryption using another copy
+						of PurpleKrypt with a different <dh>pk_aad_id</dh> file, even if the correct keyfile or password is provided.
+						Use this option with caution, and ensure you back up your PurpleKrypt copy or the <dh>pk_aad_id</dh> file. If this PK AAD ID is lost,
+						the encrypted data cannot be decrypted. (Be responsible.)
+					  </doc_para> 
+
+					  </br>
+					  </br>
+
+					  <img class="doc_image" src="imgs/1_5.png"/>
+					  <doc_fig>Fig.1.5</doc_fig>
+					  
+					  <doc_para> 
+						In <dh>Fig.1.5</dh>, you can see the layout of the <dh>Data</dh> tab when <dh>Text</dh> is selected. This layout is straightforward:
+						the left side, under <dh>Input</dh>, is where text input is provided, while the right side, under <dh>Output</dh>,
+						displays the processed text after clicking the <dh>Process</dh> button.
+					  </doc_para>
+					  
+					  <doc_h2>Status Icons, Utilities, and Controls</doc_h2>
+
+					  <doc_para> 
+						In <dh>Fig.1.6</dh>, you can see all icons and buttons located in the top bar.
+					  </doc_para>
+					  
+					  <img class="doc_image" src="imgs/1_6.png"/>
+					  <doc_fig>Fig.1.6</doc_fig>
+					  
+					  <doc_point><b>'X' button:</b> Closes the tool immediately, terminating all running processes without warning.</doc_point>
+					  <doc_point><b>'-' button:</b> Minimizes the tool window.</doc_point>
+					  <doc_point><b>'?' button:</b> Opens the Help page. If supported by your platform, this button launches your browser and navigates to the official PurpleKrypt documentation.</doc_point>
+					  <doc_point><b>'Logs' button:</b> Opens a new window displaying application logs.</doc_point>
+					  <doc_point><b>'Enc' icon:</b> Indicates the currently selected function in the <dh>Function</dh> section of the <dh>Setup</dh> tab.</doc_point>
+					  <doc_point><b>'Key' icon:</b> Appears when a key is currently stored in memory.</doc_point>
+					</div>
+
+					
+					<div class="doc_navigate_box">
+							<a href="0.html" ><p class="white_button"> Previous: Setting Up </p></a>
+							<a href="2.html" ><p class="blue_button"> Next: Generating Keys </p></a>
+					</div>	
+				</div>	
+					
+			</main>
+			
+			<footer>
+				<div id="footer_serp"></div>
+				<p style="font-size:20px; margin-top:50px"><bg>Made with passion by </bg><a href="https://saaiqsas.github.io" class="footer_saaiqSAS"> saaiqSAS</a><bg> and Contributors</bg></p>
+				<br/>
+				<ft id="copyrights">Copyrights (©) 2024 Saaiq Abdulla Saeed</ft>
+				<ft>This website and its contents are generally licensed under the <a href="../../LICENSE.md">MIT License</a>, unless stated otherwise.</ft>
+				<div class="grid3_box" id="footer_grid">
+					<div>
+						<fh>Project Info</fh>
+						<ft><a href="../../about.html">About Project</a></ft>
+						<ft><a href="../../credits.html">Credits & Contributers</a></ft>
+						<ft><a href="../../docs.html">Documentation</a></ft>
+					</div>
+					<div>
+						<fh>Get Involved</fh>
+						<ft><a href="../../download.html">Download</a></ft>
+						<ft><a href="../../contribute.html">Contribute</a></ft>
+						<ft><a href="https://github.com/PurpleKrypt">Github</a></ft>
+					</div>
+					<div>
+						<fh>Legal & Support</fh>
+						<ft><a href="../../legal/privacy_policy.html">Privacy Policy</a></ft>
+						<ft><a href="../../legal/terms.html"> Terms and Conditions</a></ft>
+						<ft><a href="../../contact.html"> Contact & Report</a></ft>
+					</div>	
+				</div>
+				<script type="text/javascript">
+					// Copyrights
+					var currentYear = new Date().getFullYear();
+					document.getElementById('copyrights').textContent = "Copyrights (©) "+currentYear + " Saaiq Abdulla Saeed";
+				</script>
+			</footer>
+		
+		</body>
+		
+		<script src="../doc_dark_mode.js"></script>
+	</html>
